@@ -1,3 +1,8 @@
+// - Wave
+//
+// - adapted from "Wavy Header" by Charles Ojukwu
+// - https://codepen.io/cojdev/details/PjYPKv
+
 (function(){
     "use strict";
 
