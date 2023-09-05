@@ -1,0 +1,71 @@
+:root {
+    --primary: #22184c;
+}
+
+*,
+*:before,
+/*  */
+*:after {
+    box-sizing: border-box;
+    /*  요소의 크기를 예측하기 쉽게 만든다 / padding + border를 포함하여 width값에 맞게 콘텐츠 영역 크기를 조절해줌 */
+}
+
+html {
+    font-family: "Work Sans", sans-serif;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    background: #fff;
+    /* background: #22184c; */
+}
+
+.header,
+.content {
+    min-height: 100px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    background-color: #ddf;
+    /* background-color: violet; */
+    /* background-color: var(--primary); */
+    background-image: linear-gradient(to bottom, rgba(var(--primary), .5), transparent);
+    color: #ddf;
+    color: var(--primary);
+
+}
+
+.content {
+    color: var(--primary);
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: .1ch;
+    font-weight: 300;
+    margin: 0;
+    opacity: .5;
+}
+
+.canvas-wrap {
+    max-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    transform: translateY(-50%);
+    /* background-color: aqua; */
+}
+
+canvas {
+    display: block;
+}
